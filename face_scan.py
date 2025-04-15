@@ -22,10 +22,9 @@ num_classes = len(emotion_dict)
 # Ustawienie urządzenia
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-# Inicjalizacja i załadowanie modelu
+num_classes = 7  # lub odpowiednia liczba klas, jeśli masz inną
 model = SimpleCNN(num_classes)
-model.load_state_dict(torch.load('assets/model_emocje.pth', map_location=device))
-model = model.to(device)
+model.load_state_dict(torch.load('assets/model_emocje.pth', map_location=torch.device('cpu')))
 model.eval()
 
 # Funkcja do predykcji emocji

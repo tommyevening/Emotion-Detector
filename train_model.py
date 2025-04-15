@@ -4,17 +4,16 @@ import torch.optim as optim
 from torchvision import datasets, transforms
 from torch.utils.data import DataLoader
 
-# Prosty model CNN
 class SimpleCNN(nn.Module):
-    def __init__(self, num_classes):
+    def __init__(self, num_classes=7):
         super(SimpleCNN, self).__init__()
         self.conv1 = nn.Conv2d(1, 32, 3, 1)
         self.conv2 = nn.Conv2d(32, 64, 3, 1)
-        self.fc1 = nn.Linear(64*10*10, 128)  # 48x48 -> 10x10 po 2x Conv+Pool
+        self.pool = nn.MaxPool2d(2, 2)
+        self.fc1 = nn.Linear(64*10*10, 128)  # 10*10 wynika z dwóch poolingów na obrazku 48x48
+        self.dropout = nn.Dropout(0.25)
         self.fc2 = nn.Linear(128, num_classes)
         self.relu = nn.ReLU()
-        self.pool = nn.MaxPool2d(2, 2)
-        self.dropout = nn.Dropout(0.25)
 
     def forward(self, x):
         x = self.relu(self.conv1(x))
@@ -86,4 +85,4 @@ if __name__ == "__main__":
 
     # Zapisz model
     torch.save(model.state_dict(), 'assets/model_emocje.pth')
-    print("Model zapisany jako assets/model_emocje.pth")
+    print("Wagi modelu zapisane jako assets/model_emocje.pth")
