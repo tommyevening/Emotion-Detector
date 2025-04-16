@@ -8,13 +8,13 @@ from train_model import SimpleCNN
 
 # Mapowanie indeksów na emocje
 emotion_dict = {
-    0: "Złość",
-    1: "Wstręt",
-    2: "Strach",
-    3: "Szczęście",
-    4: "Smutek",
-    5: "Zaskoczenie",
-    6: "Neutralny"
+    0: "Angry",
+    1: "Disgust",
+    2: "Fear",
+    3: "Happy",
+    4: "Sad",
+    5: "Surprise",
+    6: "Neutral"
 }
 
 num_classes = len(emotion_dict)
@@ -22,7 +22,7 @@ num_classes = len(emotion_dict)
 # Ustawienie urządzenia
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-num_classes = 7  # lub odpowiednia liczba klas, jeśli masz inną
+num_classes = 7
 model = SimpleCNN(num_classes)
 model.load_state_dict(torch.load('assets/model_emocje.pth', map_location=torch.device('cpu')))
 model.eval()

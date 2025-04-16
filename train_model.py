@@ -27,7 +27,6 @@ class SimpleCNN(nn.Module):
         return x
 
 if __name__ == "__main__":
-    # Ścieżki do danych
     train_dir = 'assets/train'
     test_dir = 'assets/test'
 
