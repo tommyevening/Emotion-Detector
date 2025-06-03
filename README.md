@@ -132,10 +132,6 @@ emotion-recognition-app/
 - [ ] Export emotion statistics
 - [ ] Add dark/light theme toggle
 
-## License 📄
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## Acknowledgments 🙏
 
 - OpenCV for computer vision capabilities
@@ -144,5 +140,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Haar cascade classifiers for face detection
 
 ---
-
-**Made with ❤️ for real-time emotion recognition**
