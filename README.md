@@ -40,8 +40,8 @@ Custom CNN with:
 
 1. **Clone the repository**
 ```bash
-git clone https://github.com/tommyevening/Mood-Scanner-app.git
-cd Mood-Scanner
+git clone https://github.com/tommyevening/Emotion-Detector-app.git
+cd Emotion-Detector
 ```
 
 2. **Install dependencies**
