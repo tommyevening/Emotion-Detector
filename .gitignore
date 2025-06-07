@@ -3,3 +3,6 @@ assets/
 .idea/
 __pycache__/
 gallery/
+example_training_loss_fun.ipynb
+grad_exp.ipynb
+test.ipynb
