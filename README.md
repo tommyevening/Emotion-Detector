@@ -1,8 +1,8 @@
-# Emotion Recognition App 🎭
+# Emotion Detector App 
 
 Real-time emotion detection application using computer vision and deep learning. The app captures video from your webcam, detects faces, and classifies emotions in real-time using a custom CNN model.
 
-## Features ✨
+## Features
 
 - **Real-time emotion detection** from webcam feed
 - **7 emotion categories**: Angry, Disgust, Fear, Happy, Sad, Surprise, Neutral
@@ -10,14 +10,14 @@ Real-time emotion detection application using computer vision and deep learning.
 - **Custom CNN model** trained for emotion classification
 - **Face detection** using OpenCV Haar cascades
 
-## Demo 📸
+## Demo 
 
 The application displays:
 - Live video feed with face detection rectangles
 - Real-time emotion labels on detected faces
 - Text log of detected emotions in the side panel
 
-## Tech Stack 🛠️
+## Tech Stack 
 
 - **Python 3.x**
 - **PyTorch** - Deep learning framework
@@ -26,7 +26,7 @@ The application displays:
 - **PIL/Pillow** - Image processing
 - **NumPy** - Numerical computations
 
-## Model Architecture 🧠
+## Model Architecture 
 
 Custom CNN with:
 - 2 Convolutional layers (32, 64 filters)
@@ -36,7 +36,7 @@ Custom CNN with:
 - Input: 48x48 grayscale images
 - Output: 7 emotion classes
 
-## Installation 🚀
+## Installation 
 
 1. **Clone the repository**
 ```bash
@@ -53,7 +53,7 @@ pip install torch torchvision opencv-python pillow numpy
    - Train your model using `train_model.py` or
    - Place pre-trained model weights in `assets/model_emocje.pth`
 
-## Usage 💻
+## Usage 
 
 ### Training the Model
 ```bash
@@ -85,7 +85,7 @@ assets/
 python main.py
 ```
 
-## Dataset 📊
+## Dataset 
 
 The model is designed to work with FER-2013 format:
 - **Image size**: 48x48 pixels
@@ -101,7 +101,7 @@ The model is designed to work with FER-2013 format:
 - **Optimizer**: Adam (lr=0.001)
 - **Loss function**: CrossEntropyLoss
 
-## File Structure 📁
+## File Structure 
 
 ```
 emotion-recognition-app/
@@ -114,7 +114,7 @@ emotion-recognition-app/
 └── README.md
 ```
 
-## Contributing 🤝
+## Contributing 
 
 1. Fork the repository
 2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
@@ -122,7 +122,7 @@ emotion-recognition-app/
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## Future Improvements 🔮
+## Future Improvements 
 
 - [ ] Add more emotion categories
 - [ ] Implement data augmentation
@@ -132,7 +132,7 @@ emotion-recognition-app/
 - [ ] Export emotion statistics
 - [ ] Add dark/light theme toggle
 
-## Acknowledgments 🙏
+## Acknowledgments 
 
 - OpenCV for computer vision capabilities
 - PyTorch team for the deep learning framework
