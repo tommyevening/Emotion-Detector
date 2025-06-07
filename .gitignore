@@ -2,3 +2,4 @@ assets/
 .venv/
 .idea/
 __pycache__/
+gallery/
